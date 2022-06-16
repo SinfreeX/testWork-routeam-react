@@ -1,3 +1,8 @@
+export interface IGitApi {
+    total_count: number
+    items: IProject[]
+}
+
 export interface IProject {
     id: number
     name: string
@@ -8,4 +13,5 @@ export interface IProject {
         login: string
         avatar_url: string
     }
+    order: number
 }

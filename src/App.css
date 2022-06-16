@@ -1,38 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Roboto;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+    border: 1px solid #A2A3A4;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input:focus-visible{
+    outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+    background-color: #00A3FF;
+    border: none;
 }
 
-.App-link {
-  color: #61dafb;
+ img {
+   width: 36px;
+   height: 36px;
+ }
+
+
+ .search {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 147px;
+     width: 100vw;
+     background-color: #DDDDDD;
+     padding: 32px 39px 47px 25px;
+     vertical-align: center;
+     display: block;
+     z-index: 2;
+ }
+
+
+ .search div {
+     display: flex;
+     width: 70vw;
+     max-width: 1440px;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+ }
+
+
+ .search input {
+     height: 68px;
+     width: 100%;
+     padding:  14px 23px;
+     border-radius: 0;
+ }
+
+ .search button {
+     height: 68px;
+     width: 74px;
+ }
+
+ .search button span {
+     font-size: 51px;
+     color: white;
+     height: 0;
+ }
+
+ .content{
+     margin-top: 174px !important;
+ }
+
+ .paginator {
+     display: flex;
+     flex-direction: row;
+     align-content: center;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 87px !important;
+ }
+
+ .perCount select {
+     width: 71px;
+     height: 44px;
+     text-align: center;
+     font-size: 16px;
+ }
+
+.navPages {
+    display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ .navPages button {
+     width: 52px;
+     height: 52px;
+     background: none;
+     border: 1px solid #A2A3A4;
+ }
+
+.navPages button:hover{
+    background-color: #d4efff;
 }
+
+ .navPages button.active {
+     background: #00A3FF;
+ }
+
+
+.navPages button:first-child span, .navPages button:last-child span{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 1px 7px;
+}
+
+ .navPages .space {
+     padding-top: 28px;
+     margin: 0 6px;
+ }
+
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1440px!important;
+    }
+}
+
+

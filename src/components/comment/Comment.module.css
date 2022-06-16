@@ -1,0 +1,29 @@
+.feedBack {
+    margin: 15px 15px 15px 15px;
+    display: flex;
+}
+
+.feedBack form{
+    display: flex;
+}
+
+.feedBack input {
+    width: 340px;
+    height: 54px;
+    padding: 13px 16px 16px 13px;
+    font-size: 18px;
+}
+
+.feedBack button {
+    width: 63px;
+    height: 54px;
+    margin: 0;
+}
+
+.feedBack span {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    margin-top: 6px;
+    color: white;
+}
